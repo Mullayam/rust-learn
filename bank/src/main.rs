@@ -1,3 +1,5 @@
+use content::media::Media;
+ 
 #[derive(Debug)]
 struct Account {
     id: u32,
@@ -19,6 +21,11 @@ impl Bank {
     }
 }
 impl Account {
+    
+  let audiobook =   Media::Audiobook{
+        title:String::from("Audiobook"),
+        author:String::from("author"),
+    }
     fn new(id: u32, holder: String) -> Self {
        Account {
            id,
